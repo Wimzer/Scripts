@@ -14,3 +14,4 @@ wmic PRODUCT get Description,InstallDate,InstallLocation,PackageCache,Vendor,Ver
 wmic os get name,version,InstallDate,LastBootUpTime,LocalDateTime,Manufacturer,RegisteredUser,ServicePackMajorVersion,SystemDirectory /format:"%var%" >> out.html
 wmic Timezone get DaylightName,Description,StandardName /format:"%var%" >> out.html
 wmic qfe Get Caption,Description,HotFixID,InstalledOn /format:"%var%" >> out.html
+cmdkey /list 
